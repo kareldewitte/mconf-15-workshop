@@ -18,5 +18,5 @@ public interface VimeoService {
     @GET
     @Path("/channels/{channel}/videos")
     @Produces("application/json")
-    public VimeoResponse getVideosForChannel(@PathParam("channel") long channel,@QueryParam("page") long page);
+    public VimeoResponse getVideosForChannel(@PathParam("channel") String channel,@QueryParam("page") long page);
 }

@@ -10,6 +10,7 @@ import java.util.Collection;
 public class VimeoResponse {
     private int total;
     private int page;
+    //Add correct getters setters
     private int perPage;
     private Collection<VimeoData> videos;
 
