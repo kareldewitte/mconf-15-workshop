@@ -14,10 +14,7 @@ import java.util.Map;
  */
 public class VimeoRestClientDefinition extends RestEasyClientDefinition {
 
-    private final String VIMEO_API_URL = "https://api.vimeo.com";
-    private static final Logger log = LoggerFactory.getLogger(VimeoRestClientDefinition.class);
-    private String token = "b9d095ca6b41703cb5f98c70b2f3274c";
-    private String tokenType = "bearer";
-    public final static String VIMEO_URL = "https://www.vimeo.com";
+
+
 
 }

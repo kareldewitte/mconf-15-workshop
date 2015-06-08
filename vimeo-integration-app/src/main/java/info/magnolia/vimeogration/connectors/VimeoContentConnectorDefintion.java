@@ -9,4 +9,18 @@ public class VimeoContentConnectorDefintion extends ConfiguredContentConnectorDe
     public VimeoContentConnectorDefintion() {
         setImplementationClass(VimeoContentConnector.class);
     }
+
+
+    protected String channel;
+
+
+    public String getChannel() {
+        return channel;
+    }
+
+    public void setChannel(String channel) {
+        this.channel = channel;
+    }
+
+
 }

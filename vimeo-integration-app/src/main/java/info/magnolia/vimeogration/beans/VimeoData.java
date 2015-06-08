@@ -36,13 +36,16 @@ import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 
 
 
-@JsonIgnoreProperties({ "name", "description","link","duration","width","language",
+@JsonIgnoreProperties({ "link","duration","width","language",
         "height","embed","created_time","modified_time","content_rating","license",
-        "privacy","pictures","tags","stats","metadata",
+        "privacy","tags","stats","metadata",
         "user","app","status","embed_presets"})
 public class VimeoData {
 
     private String  uri;
+    private String name;
+    private String description;
+    private VimeoPictures pictures;
 
 
     public String getUri() {
@@ -51,5 +54,29 @@ public class VimeoData {
 
     public void setUri(String uri) {
         this.uri = uri;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public VimeoPictures getPictures() {
+        return pictures;
+    }
+
+    public void setPictures(VimeoPictures pictures) {
+        this.pictures = pictures;
     }
 }
