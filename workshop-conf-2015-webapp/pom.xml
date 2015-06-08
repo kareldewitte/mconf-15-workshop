@@ -37,8 +37,10 @@
           <groupId>info.magnolia</groupId>
           <artifactId>magnolia-module-scheduler</artifactId>
       </dependency>
-
-
+      <dependency>
+          <groupId>info.magnolia</groupId>
+          <artifactId>magnolia-module-groovy</artifactId>
+      </dependency>
   </dependencies>
 
   <build>
