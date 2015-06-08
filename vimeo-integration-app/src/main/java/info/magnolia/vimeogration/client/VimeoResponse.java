@@ -11,14 +11,15 @@ public class VimeoResponse {
     private int total;
     private int page;
     //Add correct getters setters
-    private int perPage;
-    private Collection<VimeoData> videos;
+    private int per_page;
+    private Collection<VimeoData> data;
+    private Object paging;
 
-    public VimeoResponse(int total, int page, int perPage, Collection<VimeoData> videos) {
+    public VimeoResponse(int total, int page, int per_page, Collection<VimeoData> data) {
         this.total = total;
         this.page = page;
-        this.perPage = perPage;
-        this.videos = videos;
+        this.per_page = per_page;
+        this.data = data;
     }
 
     public VimeoResponse() {
@@ -42,19 +43,27 @@ public class VimeoResponse {
         this.page = page;
     }
 
-    public int getPerPage() {
-        return perPage;
+    public int getPer_page() {
+        return per_page;
     }
 
-    public void setPerPage(int perPage) {
-        this.perPage = perPage;
+    public void setPer_page(int per_page) {
+        this.per_page = per_page;
     }
 
-    public Collection<VimeoData> getVideos() {
-        return videos;
+    public Collection<VimeoData> getData() {
+        return data;
     }
 
-    public void setVideos(Collection<VimeoData> videos) {
-        this.videos = videos;
+    public void setData(Collection<VimeoData> data) {
+        this.data = data;
+    }
+
+    public Object getPaging() {
+        return paging;
+    }
+
+    public void setPaging(Object paging) {
+        this.paging = paging;
     }
 }
